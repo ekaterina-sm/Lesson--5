@@ -1,0 +1,386 @@
+/* &display=swap */
+@import "null.css";
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ================================================================ */
+
+/*1 сп подключения шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+/*3 сп подключения шрифта*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap);
+/*подключения шрифта*/
+@font-face {
+	font-family: 'Cheque';
+	src: url('../fonts/Cheque-Black.woff2') format('woff2'), url('../fonts/Cheque-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cheque';
+	src: url('../fonts/Cheque-Regular.woff2') format('woff2'), url('../fonts/Cheque-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Usually-font';
+	src: url('../fonts/UsuallyfontRegular.woff2') format('woff2'), url('../fonts/UsuallyfontRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Usually-font';
+	src: url('../fonts/UsuallyfontBold.woff2') format('woff2'), url('../fonts/UsuallyfontBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Marutya';
+	src: url('../fonts/Marutya.woff2') format('woff2'), url('../fonts/Marutya.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ================================================================ */
+body {
+	font-family: "Open Sans", "Shizuru", cursive;
+	font-size: 20px;
+}
+
+/*подключения шрифта*/
+.heading {
+	font-family: 'Cheque';
+	font-weight: 900;
+	font-style: normal;
+	font-size: 50px;
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: -10px -10px 20px rgb(47, 149, 241), -5px -2px 10px rgb(47, 239, 241);
+	letter-spacing: 10px;
+}
+.heading-2 {
+	font-family: 'Cheque';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 50px;
+	text-shadow: -10px 10px 20px rgb(255, 167, 241), 5px 2px 10px rgb(10, 3, 3);
+	display: inline;
+}
+.heading-3 {
+	font-family: 'Usually-font';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+	text-decoration: underline;
+	text-shadow: 10px 10px 1px rgb(255, 167, 0), 5px 2px 10px rgb(10, 3, 3);
+	background-color: #359C61;
+	padding: 15px 15px 15px 18.5px;
+}
+.heading-4 {
+	font-family: 'Usually-font';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	text-decoration: underline;
+	text-shadow: 10px 10px 1px #0285DE;
+}
+.paragraph-2 {
+	font-family: 'Lato';
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 10px 10px 50px #F21B7C;
+	text-transform: uppercase;
+}
+.list {
+	font-family: 'Kaisei Decol';
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: line-through;
+	text-shadow: -10px -10px 10px #6A00FC;
+	word-spacing: 20px;
+}
+.list-2, .text {
+	font-family: 'Shizuru';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	text-decoration: line-through;
+	text-shadow: -15px 10px 10px #FF680F;
+	text-transform: capitalize;
+	line-height: 1.5;
+	letter-spacing: 10px;
+	letter-spacing: 10px;
+}
+.text-3, .next {
+	font-family: 'Marutya';
+   font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	text-align: justify;
+	text-shadow: 10px 10px 10px #359C61;
+	text-transform: lowercase;
+	line-height: 1.5;
+	text-indent: 50px;
+	margin: 0px -80px 0px 0px;
+	overflow: hidden;
+}
+
+/* обратилась обратилась ко всем тегам р на странице*/
+/* p {
+	color: blueviolet;  
+} */
+span {
+	color: #DB100D;
+}
+.list 
+{
+	color: green;
+}
+.text{
+	color: aqua;
+}
+.paragraph {
+	font-size: 30px;
+}
+.list-2 {
+color: #FF680F;
+}
+/*обратились к id*/
+/*#Inline-elements {
+	color: green;
+}*/
+#Inline-elements, #Block-Elements-Block-Structure {
+	color: #DB100D;
+}
+/*приоритет*/
+/*1. порядок записи при равнозначных селекторах*/
+p {
+	color: blanchedalmond;
+}
+p {
+	color: black;
+}
+.text {
+	color: #F21B7C;
+}
+.text {
+	color: #997A2F;
+}
+.paragraph {
+	color: #0285DE;
+}
+/*уточнение*/
+/*2. селектор класса приоритетней чем селектор тега*/
+p {
+   color: #359C61;
+}
+.text {
+	color: #3817FF;
+}
+p {
+	color: black;
+}
+/*селектор id-самый приоритетный*/
+/* #Inline-elements {
+	color: #F5DC22;
+}
+.element {
+	color: chartreuse;
+}
+p {
+	color: sienna;
+}*/
+/*уточнение обращения*/
+/*div.text {
+	color: #3817FF;
+}
+.text {
+	color: hotpink;
+}*/
+/*комбинация селекторов классов*/
+.text.paragraph {
+   color: black;
+}
+.text {
+	color: red;
+}
+/*вложенность и приоритетность*/
+span {
+	color: #F21B7C;
+}
+p span {
+   color: #9C4A35;
+}
+.text span {
+	color: #3817FF;
+}
+p .string {
+	color: #359C61;
+}
+
+/*селекторы атрибутов*/
+[title="имя"] {
+	color: #FF680F;
+}
+/*перечисление*/
+.about__text,
+.block__text {
+	color: aqua;
+}
+.about__text {
+	color: black;
+}
+/*используем селектор атрибутов*/
+[class*="__text"] {
+	color: #997A2F;
+}
+/*комплексные селекторы*/
+/* .section p {
+	color: #6A00FC;
+} */
+.section > p {
+	color: #6A00FC;
+}
+/*обращаемся только к первому следующему обьекту того же уровня*/
+/* .next__text+p {
+	color: chartreuse;
+} */
+/*.next__text~p {
+	color: #3817FF;
+} */
+.next__text + * {
+	color: chocolate;
+} 
+
+/*общий селектор*/
+* {
+	color: cadetblue;
+}
+
+
+.page-2 {
+	text-align: center;
+}
+a {
+	text-decoration: underline;
+} 
+.text-3{
+	text-decoration: line-through;
+}
+.block-2 {
+	background-color: yellow;
+	padding-top: 20px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.inline {
+	background-color: chartreuse;
+	font-size: 30px;
+	line-height: 1.5;
+}	
+.menu {
+	background-color: #F4F5C6;
+	padding-top: 30px;
+}
+.block-4 .paragraph-2 {
+	background-color: #EDE8F4;
+	padding: 0px 0px 50px 50px;
+}
+.next .next__text, .next p {
+	background-color: #F4F5C6;
+	padding: 20px 30px;
+	margin-top: 20px;
+	margin-right: -20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	min-width: 200px;
+}
+.about__text {
+	background-color: #F5E1E9;
+	padding: 40px 80px 30px;
+	margin-bottom: 20px;
+	max-width: 1300px;
+	margin: 10px auto 10px;
+}
+.block__text {
+	background-color: #FFF5C2;
+	padding: 5%;
+	width: 80%;
+	height: 10%;
+	margin: 0px auto;
+}
+.heading-5 {
+	background-color: #FADE10;
+	padding: 30px;
+	width: auto;
+}
+.section {
+	background-color: #FACEC2;
+	margin: 40px 80px 0px 60px;
+	margin: 30px auto;
+	width: 1000px;
+	line-height: 1.5;
+	height: 800px;
+	overflow: scroll;
+}
+.block-3 {
+	background-color: #8CD181;
+	margin: 10px 10px 0px 10px;
+	padding: 20px;
+	line-height: 1.5;
+	min-height: 40px;
+	max-height: 500px;
+}
+.block-5 {
+	background-color: #FFBF9E;
+	padding: 20px;
+	margin: 0 0 0 auto;
+}
+.wrapper {
+	background-color: #FFBF9E;
+	padding: 30px;
+	margin: 20px 30px 50px 40px;
+	max-height: 200px;
+	overflow: auto;
+	/*display: none*/
+}
+.block-6 {
+	margin: 0px 100px 0px 50px;
+	background-color: yellowgreen;
+	line-height: 1.5;
+	display: inline;
+}
+.block-7 {
+	margin: 60px 100px 0px 50px;
+	background-color: hotpink;
+	line-height: 1.5;
+}
+.span {
+	margin: 50px 0px 0px 0px;
+	background-color: gray;
+	line-height: 1.5;
+	display: block;
+}
+.span-1 {
+	background-color: wheat;
+	width: 950px;
+	display: inline-block;
+	padding: 30px;
+	margin: 50px 0px 0px 0px;
+}

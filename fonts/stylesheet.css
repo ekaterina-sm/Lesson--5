@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Cheque';
+    src: url('Cheque-Black.woff2') format('woff2'),
+        url('Cheque-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cheque';
+    src: url('Cheque-Regular.woff2') format('woff2'),
+        url('Cheque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shizuru';
+    src: url('Shizuru-Regular.woff2') format('woff2'),
+        url('Shizuru-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Usually-font';
+    src: url('UsuallyfontRegular.woff2') format('woff2'),
+        url('UsuallyfontRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Usually-font';
+    src: url('UsuallyfontBold.woff2') format('woff2'),
+        url('UsuallyfontBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

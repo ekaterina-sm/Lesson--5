@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- 2 сп подключения шрифта -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Playfair+Display:ital,wght@1,500&family=Redressed&family=Shizuru&display=swap" rel="stylesheet">
+
+		<!-- 4 сп подключения шрифта -->
+		<link href="https://fonts.googleapis.com/css?family=Kaisei+Decol:400,500,700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 5 - Курс Зима 2022</title>
+
+		<!--подключение стиля № 2 <style>
+         p {
+	color: red
+            }
+		</style> -->
+
+	</head>
+	<body>
+		<div>
+			<header class="header">шапка</header>
+			<main>
+				
+				<div class="page">
+					<h1 class="heading">Блочные и строчные элементы</h1>
+					<nav class="menu">
+						<img src="img/галочка.jpg" alt="галочка">
+						<h2 class="heading-2">Далее на странице...</h2>
+						<br>
+						<br>
+						<img src="img/1-галочка.jpg" alt="1-галочка">
+						<a href="#Inline-elements">Строчные элементы</a>
+						<br>
+						<img src="img/2-галочка.jpg" alt="2-галочка">
+						<a href="#Block-Elements-Block-Structure">Блочные элементы - Структура блока</a>
+					</nav>
+					<br>
+					<img width="200"  src="img/blok.png" alt="блочные и строчные элементы">
+					<br>
+					<div class="block-4">
+						<p class="paragraph-2">В HTML большинство элементов можно разделить на две <br> большие группы: блочные (blok) и строчные (inline).</p>
+						<p class="paragraph-2">Начинающему веб-разработчику не всегда сразу удается <br> разобраться, в чем разница между ними, а также <br> запомнить принадлежность элементов к конкретной <br> группе. Но со временем и с опытом работы таких <br> затруднений не возникнет.</p>
+						<p class="paragraph-2">Поговорим о том, что такое блочные и строчные <br> элементы и какие элементы веб-страниц относятся к той <br> или другой группе.</p>
+					</div>
+					<h2 class="heading-3" id="Inline-elements">Строчные элементы</h2>
+					<p class="paragraph-3">К строчным элементам относятся теги: </p>
+					<br>
+					<img width="800" src="img/строчные-теги.jpg" alt="строчные теги">
+					<span><a href="https://www.webpupil.ru/html_tag.php" target="_blank" class="link">О тегах HTML читайте здесь.</a></span>
+					<p><mark>Строчные элементы</mark> в cобщем потоке располагаются последовательно на одной строке один за другим.</p>
+					<p>На другую строку строчный элемент или часть его содержимого переходит только в конце строки или когда что-то принудительно заставляет их перейти на новую строку.</p>
+					<p>Строчные элементы могут располагаться внутри блочных элементов.</p>
+					<p>Применение значения block <span><a href="https://www.webpupil.ru/view_property.php?id=23">свойства display</a></span> к строчному элементу делает его блочным.</p>
+					<h2  class="heading-3" id="Block-Elements-Block-Structure">Блочные элементы - Структура блока</h2>
+					<p>К блочным элементам относятся теги:</p>
+					<img width="800" src="img/блочные-теги.jpg" alt="блочные теги">
+					<div class="block-5">
+						<p>Блок представляет собой как бы отдельную структурную единицу, выделенную абзацем. <mark>Блочные элементы</mark> в общем потоке располагаются последовательно один под другим. По умолчанию два блочных элемента не могут располагаться на одной строке.</p>
+						<p>Один или несколько блоков могут располагаться внутри другого (родительского) блочного элемента.</p>
+						<p>В <span><a href="https://www.webpupil.ru/css.php">CSS</a></span> блоки создаются на основе элементов HTML и имеют следующую структуру.</p>
+						<img width="800" src="img/структура.png" alt="Структура">
+						<p>Итак, <span>какова же структура блока</span>?</p>
+					</div>
+					<div class="block-3">
+						<p id="blok" title="имя" class="name paragraph">Любой блок имеет форму прямоугольника.</p>
+						<p>Блочный элемент имеет границу и содержимое: это может быть текстовая информация, фотографии, логотип фирмы и т.п.</p>
+						<p>Любое содержимое блока или веб-страницы называется контентом (англ. content — содержание).</p>
+						<p>Границе блока при помощи<span> <a href="https://www.webpupil.ru/view_property.php?id=7">свойства border</a> </span> можно придать необходимое оформление: задать толщину, цвет и стиль линий. По умолчанию граница невидима.</p>
+						<p>Между содержимым и границей существуют внутренние расстояния - <mark>поля блока</mark> (свойство padding). Ими не обязательно пользоваться. То есть если их явно не установить при помощи <span><a href="https://www.webpupil.ru/view_property.php?id=55">свойства padding</a></span> , то граница будет вплотную примыкать к содержимому блока, либо отстоять от него на каком-то минимальном расстоянии. С другой стороны, поля могут иметь совершенно конкретные размеры, которые указывает разработчик.</p>
+						<p>Вокруг блока за его границей существуют пустые, ничем не занятые области, называемые отступами (свойство margin). <span>Отступы блока</span> - это расстояния от его границ, до ближайших элементов, или, если их нет, то до краев окна браузера. Отступы так же, как и поля по умолчанию отсутствуют, либо имеют минимальную ширину, автоматически определяемую браузером.</p>
+						<p>Также для блока можно задать фиксированную ширину (свойство width) и высоту (свойство height), но лишь для его содержимого. Отступы, граница и поля в содержимое блока не входят. По умолчанию, как высота, так и ширина блока подстраиваются под размеры пространства, занимаемого контентом.</p>
+					</div>
+					<h3  class="heading-4">Фрагмент кода</h3>
+					<br>
+					<img src="img/фрагмент-кода.jpg" alt="фрагмент кода">
+					<h3  class="heading-4">Результат</h3>
+					<br>
+					<img width="100" src="img/пингвин.png" alt="пингвин">
+					<br>
+					<p class="paragraph-2">Строчные элементы <span> расположены на одной строке</span>. Они заключены в блочный элемент - абзац. Перенос текста происходит автоматически - в конце строки.</p>
+					<p class="paragraph-2">Этот блок - параграф, начинается с новой строки.</p>
+					<p class="paragraph-2">Два параграфа расположены.</p>
+					<p class="paragraph-2">Внутри блока - тега <span>div</span></p>
+					<p class="paragraph-2">Отдельные фрагменты текста заключены в тег span. И для них задано стилевое оформление.</p>
+					<div class="list">
+						<ol>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, molestias eum tempore aut et sapiente numquam corrupti quibusdam quod possimus? Sit quo amet error, quisquam aliquam soluta ratione voluptatem consequuntur.</li>
+							<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus voluptatum autem sed accusantium excepturi blanditiis, itaque esse soluta eligendi commodi, cum ab! Deserunt exercitationem aliquam ipsum, quia voluptates ullam?</li>
+							<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, ipsam commodi ratione rerum dolore officiis odit, debitis facere distinctio blanditiis at est ex eligendi libero in temporibus culpa unde. Nobis!</li>
+						</ol>
+						<ol>
+							<li>Lorem, <span> dolor sit amet consectetur </span>adipisicing elit. Dolor quisquam fuga culpa nobis perferendis voluptate eaque vero maxime accusamus neque molestias atque expedita quis, ipsam sapiente quibusdam soluta facilis ducimus.</li>
+							<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos, fuga quia vel nulla, ad fugit labore nobis perspiciatis hic doloremque. Ab eius libero, cum amet provident soluta quaerat dolores! </li>
+							<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, atque voluptate magnam mollitia necessitatibus ipsam saepe facilis blanditiis quae recusandae quia sunt aperiam ullam odit aliquam laboriosam explicabo corporis quos.</li>
+						</ol>
+					</div>
+					<div>
+						<p class="text paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus facere debitis placeat aliquam voluptate iusto suscipit quo ea, quae aliquid sit, numquam quis fugiat amet, neque sunt soluta cumque quasi.</p>
+						<p class="text">Lorem ipsum dolor sit amet <span class="string"> adipisicing </span>elit. Fuga eum provident, rerum odio pariatur iste quisquam. Voluptas nam, neque quasi quae perspiciatis nobis error placeat similique fuga fugit sequi animi.</p>
+						<p class="text paragraph list-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus libero pariatur. Maxime ea atque dolores quod non cupiditate iste aspernatur incidunt vel sunt laboriosam, odio quas placeat, vitae nisi.</p>
+						<p class="text-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda, provident temporibus nulla consequatur aperiam a sunt consectetur iste atque beatae inventore necessitatibus numquam, enim eum labore qui unde dignissimos.Iste, perferendis nihil corporis neque deserunt doloribus repellat nulla debitis minima inventore qui tempore doloremque mollitia! Autem corrupti inventore labore sit sunt. Facilis dolore veritatis, quis quibusdam error sint! Velit Aliquid <span> dicta amet in, consequuntur ab fugit, ipsa qui earum dolorem </span>pariatur distinctio at dolore, saepe nulla nemo quidem facilis officia impedit. Voluptate repellat nostrum neque porro quae deserunt. A ullam fugiat similique. Cum eos odio et? Esse ipsa dicta incidunt laborum placeat iusto nostrum nemo voluptate recusandae, in iste, ullam explicabo aliquid quaerat reiciendis consectetur soluta dignissimos necessitatibus! Facilis dolores, consequuntur eaque obcaecati sint laboriosam et, praesentium natus corrupti inventore ex tenetur esse officiis quae accusamus dolorum suscipit non a. Tempore officiis quos, repudiandae maxime quo corrupti ipsum. Atque sequi ipsum rem adipisci, quia quis porro? Voluptate exercitationem magni tenetur mollitia ex cumque beatae ea dolorum voluptatum, totam animi ut velit! Ab sapiente, laborum ipsam possimus numquam quis.</p>
+					</div>
+					<p class="text">Lorem ipsum dolor sit amet <span class="string"> adipisicing </span>elit. Fuga eum provident, rerum odio pariatur iste quisquam. Voluptas nam, neque quasi quae perspiciatis nobis error placeat similique fuga fugit sequi animi.</p>
+					<div class="text">
+						Lorem, dolor sit amet consectetur <span>adipisicing elit.</span>Soluta numquam ab vero eveniet sed, voluptas nam quidem neque porro provident nihil fugiat fuga itaque voluptate dolores quae quisquam qui. Voluptate Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates deserunt esse atque sit aut nobis ex voluptate enim facilis doloremque, laborum architecto nihil, modi error voluptas excepturi odio maiores quia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veritatis numquam provident omnis nulla voluptate quaerat non sequi fuga est, unde autem nisi illo. Veritatis temporibus facere similique minima animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis pariatur, modi, provident voluptates quia officia quam consequatur quisquam nemo porro voluptas nesciunt nihil nulla error. Alias ad molestiae ipsam commodi.
+					</div>
+					<h3 class="heading-5">Идентификаторы и классы</h3>
+					<div class="about">
+						<div class="about__text">
+							Каждый НТМL-элемент может иметь атрибут id. Он предназначен для идентификации какого-либо конкретного тега. В пределах всей HTML-страницы должен существовать только один тег с определенным значением атрибута id. Наличие нескольких элементов с одинаковым значением id не допускается и может привести к ошибке. Значение атрибута id может состоять из букв латинского алфавита, цифр, знака подчеркивания и дефиса. Причем значение атрибута может начинаться с латинской буквы или со знака подчеркивания (но не с цифры или другого символа). Кроме того, значения атрибута id чувствительны к регистру. Атрибут id называют глобальным, поскольку он может быть использован с любыми НТМL-элементами. В CSS id-селектор содержит символ (#), непосредственно за которым следует значение атрибута id. Например, следующий id-селектор сопоставляется элементу h2, значение атрибута id которого равно chapter:
+						</div>
+					</div>
+					<div class="block">
+						<div class="block__text">
+							Классы используются для классификации элементов по общим группам, поэтому в отличие от атрибута id, множеству элементов может быть присвоено общее имя класса. Присваивая элементам имя одного класса, вы можете применить стили ко всем таким элементам одновременно с помощью единственного правила стилей. Чтобы сделать это, следует воспользоваться атрибутом class. Его значение должно описывать, к какому классу принадлежит элемент.
+						</div>
+					</div>
+					<div class="section">
+						<p>Первый уровень-Перед глубоким погружением в некоторые более сложные селекторы и те, которые предлагаются в CSS3, давайте взглянем на некоторые наиболее типовые селекторы на сегодня. Эти селекторы включают в себя селекторы типа, классы и идентификаторы.</p>
+						<div class="section__text">
+							<p>Второй уровень-Селектор типа идентифицирует элемент, основанный на его типе, в частности, как этот элемент объявлен в HTML. Селектор класса идентифицирует элемент, основанный на значении атрибута class, который может повторно применяться к нескольким элементам по мере необходимости и помогает делиться популярными стилями. И, наконец, идентификатор определяет элемент, основанный на значении атрибута id, который является уникальным и должен быть использован на странице только один раз.</p>
+							<p>Наиболее распространённым дочерним селектором является селектор потомка, который соответствует каждому элементу, который следует за определённым предком. Потомок не обязательно должен идти сразу после предка в дереве документа, вроде отношения родитель-ребёнок, но может находиться в любом месте внутри предка. Селекторы потомка создаются пробелом между отдельными элементами в селекторе, создавая новый уровень иерархии для каждого элемента списка.</p>
+						</div>
+						<p>Дочерние селекторы обеспечивают способ выбора элементов, которые находятся один в другом, что делает их детьми своего родительского элемента. Такой выбор может быть сделан двумя разными способами, с помощью селектора потомка либо прямого дочернего селектора.</p>
+					</div>
+					<div class="next">
+						<p class="next__text">Знать, как выбрать дочерние элементы, в значительной степени полезно и встречается довольно часто. Однако родственные элементы, т. е. элементы, у которых общий предок, также может потребоваться выбрать. Такая выборка может быть сделана с помощью общего родственного селектора и соседних селекторов.</p>
+						<p>Иногда может быть желательно иметь немного больше контроля, в том числе возможность выбрать родственный элемент, который следует непосредственно за другим родственным элементом. Соседний селектор будет выбирать только родственные элементы, непосредственно следующие за другим родственным элементом. Вместо символа тильды, как в случае с общим родственным селектором, соседний селектор использует символ плюс (+) между двумя элементами в селекторе. Опять же, первый элемент определяет, что второй элемент должен непосредственно следовать после него и быть ему родственным и у обоих элементов должен быть один и тот же родитель.</p>
+						<P>Взглянем на соседний селектор h2 + p. Будут выбраны только элементы  идущие непосредственно после элементов . У обоих также должен быть один и тот же родительский элемент.</P>
+					</div>
+					<div class="block-2">
+						<p>Я блочный див-До недавнего времени внимание CSS никогда действительно не обращалось на селекторы. Время от времени появлялись небольшие обновления в пределах спецификации селекторов, но никогда не было никаких реальных новаторских улучшений. К счастью, в последнее время всё больше внимания уделяется селекторам, так что взглянем на то, как выбирать разные типы элементов и элементы в разных состояниях.</p>
+						<img width="150" src="img/писец.JPG" alt="писец">
+					</div>
+					<span class="inline">Я строчный спан-Селектор типа идентифицирует элемент, основанный на его типе, в частности, как этот элемент объявлен в HTML. Селектор класса идентифицирует элемент, основанный на значении атрибута class, который может повторно применяться к нескольким элементам по мере необходимости и помогает делиться популярными стилями. И, наконец, идентификатор определяет элемент, основанный на значении атрибута id, который является уникальным и должен быть использован на странице только один раз.</span>
+					<div class="wrapper">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure impedit eaque, ipsam, illum, voluptatum laudantium reprehenderit maxime repellendus pariatur tempore omnis similique sunt quae magnam vitae nisi. Libero, vero quo! Sint maxime consequatur corporis, eaque quibusdam consequuntur eveniet nam dicta at dolorem eum saepe. Unde dolore voluptates nam officiis fugiat suscipit praesentium itaque eaque recusandae non. Natus laborum at repellat! Doloremque facere minus natus neque fugiat, dicta dolores! Cumque cupiditate molestias sequi qui et iste a architecto fugit dolor rerum labore quidem ipsam, voluptates officiis eaque sed nostrum! Enim, ipsum? Assumenda iusto, error dolor deserunt impedit aspernatur modi, eaque praesentium, nisi cum voluptas a molestias inventore. Aut quaerat modi saepe adipisci? Quos voluptatem delectus repellendus enim aut, ipsam sit numquam. Asperiores ipsum consectetur dolor eos. Ducimus distinctio, ratione, dolorem dignissimos nostrum ipsam repudiandae odit nesciunt facere nam quam ipsum repellendus. Cum vel obcaecati unde magni quod, distinctio molestias libero ut. Rerum sapiente beatae fugit cumque illum distinctio totam voluptates explicabo animi? Ratione blanditiis possimus provident sed ipsum aliquam! Quaerat ab veritatis accusantium commodi laborum perspiciatis dolor officiis quasi at libero. Saepe natus obcaecati quia quis corrupti pariatur id, molestiae illo cupiditate esse laborum quaerat corporis magni nostrum perspiciatis modi maiores voluptas officiis consequuntur beatae dicta aut perferendis totam? Dolor, hic. Praesentium sint autem deleniti eveniet. Harum, velit officiis. Itaque laborum iure minus sit, magnam fugiat. Laudantium, aspernatur cum eum alias est mollitia maiores nulla, enim distinctio dolorum ullam doloribus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque omnis, ipsum sequi, ducimus reprehenderit debitis, quae odio quaerat corporis modi assumenda consectetur iure distinctio soluta in ex magnam consequuntur velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error veritatis ipsum ipsa, distinctio, laudantium impedit explicabo iure at qui excepturi voluptatibus magnam, nihil dolores autem totam aspernatur deserunt nisi quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam alias, nemo, aut quod veniam placeat, accusantium excepturi autem delectus quidem eligendi quibusdam voluptate! Corporis ipsum possimus adipisci atque architecto Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure impedit eaque, ipsam, illum, voluptatum laudantium reprehenderit maxime repellendus pariatur tempore omnis similique sunt quae magnam vitae nisi. Libero, vero quo! Sint maxime consequatur corporis, eaque quibusdam consequuntur eveniet nam dicta at dolorem eum saepe. Unde dolore voluptates nam officiis fugiat suscipit praesentium itaque eaque recusandae non. Natus laborum at repellat! Doloremque facere minus natus neque fugiat, dicta dolores! Cumque cupiditate molestias sequi qui et iste a architecto fugit dolor rerum labore quidem ipsam, voluptates officiis eaque sed nostrum! Enim, ipsum? Assumenda iusto, error dolor deserunt impedit aspernatur modi, eaque praesentium, nisi cum voluptas a molestias inventore. Aut quaerat modi saepe adipisci? Quos voluptatem delectus repellendus enim aut, ipsam sit numquam. Asperiores ipsum consectetur dolor eos. Ducimus distinctio, ratione, dolorem dignissimos nostrum ipsam repudiandae odit nesciunt facere nam quam ipsum repellendus. Cum vel obcaecati unde magni quod, distinctio molestias libero ut. Rerum sapiente beatae fugit cumque illum distinctio totam voluptates explicabo animi? Ratione blanditiis possimus provident sed ipsum aliquam! Quaerat ab veritatis accusantium commodi laborum perspiciatis dolor officiis quasi at libero. Saepe natus obcaecati quia quis corrupti pariatur id, molestiae illo cupiditate esse laborum quaerat corporis magni nostrum perspiciatis modi maiores voluptas officiis consequuntur beatae dicta aut perferendis totam? Dolor, hic. Praesentium sint autem deleniti eveniet. Harum, velit officiis. Itaque laborum iure minus sit, magnam fugiat. Laudantium, aspernatur cum eum alias est mollitia maiores nulla, enim distinctio dolorum ullam doloribus modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque omnis, ipsum sequi, ducimus reprehenderit debitis, quae odio quaerat corporis modi assumenda consectetur iure distinctio soluta in ex magnam consequuntur velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error veritatis ipsum ipsa, distinctio, laudantium impedit explicabo iure at qui excepturi voluptatibus magnam, nihil dolores autem totam aspernatur deserunt nisi quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam alias, nemo, aut quod veniam placeat, accusantium excepturi autem delectus quidem eligendi quibusdam voluptate! Corporis ipsum possimus adipisci atque architecto?
+					</div>
+					<div class="block-6">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia?
+					</div>
+					<br>
+					<div class="block-7">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia?
+					</div>
+					<br>
+					<span class="span">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia?
+					</span>
+					<span class="span-1">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam enim recusandae ipsa sapiente non cupiditate, vitae maiores corporis qui libero nobis, doloribus quas facere sed in! Eos, consequuntur? Quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quidem ut voluptas expedita? Veniam accusantium voluptas excepturi assumenda soluta non, ducimus consectetur error maxime numquam. Vero aspernatur asperiores quod mollitia?
+					</span>
+				</div>
+
+				<div class="page-2" style="color: blueviolet; font-size: 100px;">
+					<a href="figma.html" target="_blank" class="link">FIGMA</a>
+				</div>
+
+			</main>
+			<footer class="footer">подвал</footer>
+		</div>
+	</body>
+</html>
